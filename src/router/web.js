@@ -7,11 +7,10 @@ const initWebRoute = (app) => {
     res.render("test/index.ejs");
   }); */
   router.get("/", homeController.getHomepage);
-
+  router.get("/detail/user/:userID", homeController.getDetailPage)
   router.get("/about", (reg, res) => {
     router.send(`My name is Zero`);
   });
-
   return app.use("/", router);
 };
 
