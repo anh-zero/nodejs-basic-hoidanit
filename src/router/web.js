@@ -7,7 +7,8 @@ const initWebRoute = (app) => {
     res.render("test/index.ejs");
   }); */
   router.get("/", homeController.getHomepage);
-  router.get("/detail/user/:userID", homeController.getDetailPage)
+  router.get("/detail/user/:userID", homeController.getDetailPage);
+  router.post('/create-new-user', homeController.createNewUser);
   router.get("/about", (reg, res) => {
     router.send(`My name is Zero`);
   });
