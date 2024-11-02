@@ -54,3 +54,24 @@ body {
     margin-top: 15px;
     cursor    : pointer;
 }
+
+.upload-file-container {
+    padding: 15px;
+}
+
+.upload-file-container label {
+    display: block;
+}
+
+a.btn-detail{
+  background-color: #EFEFEF;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px;
+  display: block;
+}
+
+hr {
+    border-top: 3px solid #eee !important;
+}
